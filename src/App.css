@@ -1,0 +1,442 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+a,button:hover{
+    cursor: pointer;
+}
+.big{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color:black;
+}
+h1,p,button{
+    z-index: 20;
+}
+h3{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-family: 'Lora', serif;
+    line-height: 2rem
+}
+button{
+    width: 10rem;
+    transition: all 2s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+.koko{
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 20px;
+    left: 30px;
+}
+
+.header{
+    z-index: 99;
+   position : fixed;
+    height: 3rem;
+    color: transparent;
+    transition : background 0.4s ease-in-out;
+    width: 100%;
+}
+
+.header.scrolled{
+    background-color: rgb(70, 68, 68);
+    opacity: 0.98;
+    width: 100%;
+}
+
+img{
+    position: absolute;
+    opacity: 1;
+}
+.profile{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.strong{
+    line-height: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 12rem;
+    width: 14rem;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.card img{
+    height: 10rem;
+    width: 14rem;
+}
+.card p{
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+
+}
+/*CSS ANIMATIONS BUBBLES*/
+@keyframes Anim_bob{
+    0%{
+       transform: translate(0,0);
+    }
+    50%{
+      transform: translate(30% , 20%);
+    }
+    100%{
+       transform: translate(-10% , -5%);
+    }
+}
+.bob{ 
+    right: 0px;
+    width: 30rem;
+    height: 30rem;
+    animation-name: Anim_bob;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}  
+
+@keyframes Anim_bob1{
+    0%{
+       transform: translate(0,0);
+    }
+    50%{
+      transform: translate(30% , -30%);
+    }
+    100%{
+       transform: translate(-20% , 25%);
+    }
+}
+.bob1{
+    right: 10px;
+    top: 50px;
+    width: 20rem;
+    height: 20rem;
+    animation-name: Anim_bob1;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes Anim_bob2{
+    0%{
+       transform: translate(0,0);
+    }
+    50%{
+      transform: translate(50% , 40%);
+    }
+    100%{
+       transform: translate(-60% , -25%);
+    }
+}
+.bob2{
+  right: 20px;
+  top: 30px;
+  width: 30rem;
+  height: 30rem;
+  animation-name: Anim_bob2;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes Anim_bob3{
+    0%{
+       transform: translate(0,0);
+    }
+    50%{
+      transform: translate(50% , -40%);
+    }
+    100%{
+       transform: translate(60% , 25%);
+    }
+}
+
+.bob3{
+  right: 50px;
+  top: 200px;
+  width: 25rem;
+  height: 25rem;
+  animation-name: Anim_bob3;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes Anim_bob4{
+    0%{
+       transform: translate(0,0);
+    }
+    50%{
+      transform: translate(20% , -40%);
+    }
+    100%{
+       transform: translate(-40% , 30%);
+    }
+}
+
+.bob4{
+  right: 50px;
+  top: 400px;
+  width: 40rem;
+  height: 40rem;
+  animation-name: Anim_bob4;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes Anim_bob5{
+    0%{
+       transform: translate(0,0);
+    }
+    50%{
+      transform: translate(50% , -40%);
+    }
+    100%{
+       transform: translate(60% , 25%);
+    }
+} 
+.bob5{
+  left: 50px;
+  top: 150px;
+  width: 50rem;
+  height: 50rem;
+  animation-name: Anim_bob5;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes Anim_bob6{
+    0%{
+       transform: translate(0,0);
+    }
+    50%{
+      transform: translate(-60% , 40%);
+    }
+    100%{
+       transform: translate(60% , 25%);
+    }
+} 
+.bob6{
+     left: 150px;
+  top: 30px;
+  width: 50rem;
+  height: 50rem;
+  animation-name: Anim_bob6;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes Anim_bob7{
+    0%{
+        transform: translate(0 ,0);
+    }
+    50%{
+        transform: translate(-30% ,80%);
+    }
+    100%{
+        transform: translate(80% ,-30%);
+    }
+}
+.bob7{
+     left: 50px;
+  top: 150px;
+  width: 20rem;
+  height: 20rem;
+  animation-name: Anim_bob7;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
+}
+@keyframes Anim_bob8{
+    0%{
+        transform: translate(0 ,0);
+    }
+    50%{
+        transform: translate(-30% ,80%);
+    }
+    100%{
+        transform: translate(-30% ,-70%);
+    }
+}
+.bob8{
+  left: 150px;
+  top: 0;
+  width: 50rem;
+  height: 50rem;
+  animation-name: Anim_bob8;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  z-index: -1;
+}
+
+@keyframes Anim_bob9{
+    0%{
+        transform: translate(0 ,0);
+    }
+    50%{
+        transform: translate(-30% ,80%);
+    }
+    70%{
+        transform: translate(-90% ,-70%);
+    }
+    100%{
+        transform: translate(-100% ,70%);
+    }
+}
+.bob9{
+     right: 50px;
+  top: 200px;
+  width: 30rem;
+  height: 30rem;
+  animation-name: Anim_bob9;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
+}
+@keyframes Anim_bob10{
+    0%{
+        transform: translate(0 ,0);
+    }
+    50%{
+        transform: translate(-30% ,80%);
+    }
+    70%{
+        transform: translate(-90% ,-70%);
+    }
+    100%{
+        transform: translate(-100% ,70%);
+    }
+}
+.bob10{
+    left: 50%;
+  top: 0;
+  width: 40rem;
+  height: 40rem;
+  animation-name: Anim_bob10;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
+ 
+}
+
+.bob11{
+     left: 50px;
+  top: 150px;
+  width: 20rem;
+  height: 20rem;
+  animation-name: bob12;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+ 
+}
+@keyframes bob12{
+    0%{
+        transform: translate(0 ,0);
+    }
+    50%{
+        transform: translate(-30% ,-30%);
+    }
+    100%{
+        transform: translate(30% ,30%);
+    }
+}
+.bob12{
+     left: 10;
+  top: 0;
+  width: 80rem;
+  height: 80rem;
+  animation-name: bob12;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  z-index: -1;
+}
+
+@keyframes Anim_bob174{
+    0%{
+        transform: translate(0 ,0);
+    }
+    100%{
+        transform: translate(-30% ,-40%);
+    }
+   
+}
+.bob13{
+  left: 60px;
+  top: 45px;
+  width: 60rem;
+  height: 60rem;
+  animation-name:Anim_bob174;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  z-index: -1;
+}
+
+@keyframes Anim_bob13{
+    0%{
+        transform: translate(0 ,0);
+    }
+    50%{
+        transform: translate(-30% ,80%);
+    }
+    70%{
+        transform: translate(-90% ,-70%);
+    }
+    100%{
+        transform: translate(-200% ,-70%);
+    }
+}
+.bob14{
+     right: 50px;
+  top: 150px;
+  width: 25rem;
+  height: 25rem;
+  animation-name: Anim_bob13;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes Anim_bob15{
+    0%{
+        transform: translate(0 ,0);
+    }
+    50%{
+        transform: translate(-30% ,80%);
+    }
+    70%{
+        transform: translate(-90% ,-70%);
+    }
+    100%{
+        transform: translate(-200% ,100%);
+    }
+}
+.bob15{
+     right: 100px;
+  top: 150px;
+  width: 35rem;
+  height: 35rem;
+  animation-name: Anim_bob15;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
+}
+
